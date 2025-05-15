@@ -150,7 +150,7 @@ const updateDisplay = (newTask = null) => {
     pushDiv.style.display = "block";
     const taskDiv = document.createElement("div");
     taskDiv.className = "taskDiv";
-    taskDiv.innerHTML = `<h4>${newTask.date}</h4><p class="taskName">${newTask.taskName}</p><p>${newTask.time}</p>`;
+    taskDiv.innerHTML = `<div><h4>${newTask.date}</h4><p class="taskName" style="display:inline">${newTask.taskName}</p><p class="time">${newTask.time}</p></div>`;
     pushDiv.append(taskDiv);
     insertBtn(taskDiv, newTask);
   } else {

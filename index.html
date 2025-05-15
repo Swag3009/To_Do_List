@@ -7,36 +7,38 @@
     <title>To Do List</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>To-Do List</h1>
-        <input value="" name="search-box" placeholder="Search tasks..." type="text" id="search-box"/>
-      </header>
-      <div class="taskInput">
-	<input name="text" id="text" type="text" placeholder="Add your to-do task..."/>
-	<input name="date" id= "date" type="date" />
-	<input name="time" id="time" type="time" />
-	<button type="submit" id="addTask">Add Task</button>
+    <div class="entire-container">
+      <div class="container">
+	<header>
+          <h1>To-Do List</h1>
+          <input value="" name="search-box" placeholder="Search tasks..." type="text" id="search-box"/>
+	</header>
+	<div class="taskInput">
+	  <input name="text" id="text" type="text" placeholder="Add your to-do task..."/>
+	  <input name="date" id= "date" type="date" />
+	  <input name="time" id="time" type="time" />
+	  <button type="submit" id="addTask">Add Task</button>
+	</div>
+	<div class="taskList">
+	  <div id="due" style="display: none">
+	    <h2>Due</h2>
+	  </div>
+	  <div id="today" style="display: none">
+	    <h2>Today</h2>
+	  </div>
+	  <div id="upcoming" style="display: none">
+	    <h2>Upcoming</h2>
+	  </div>
+	</div>
       </div>
-      <div class="taskList">
-	<div id="due" style="display: none">
-	  <h2>Due</h2>
-	</div>
-	<div id="today" style="display: none">
-	  <h2>Today</h2>
-	</div>
-	<div id="upcoming" style="display: none">
-	  <h2>Upcoming</h2>
-	</div>
+      <div id="editField" style = "display: none">
+	<h2></h2>
+	<input type="text" value=""/>
       </div>
-    </div>
-    <div id="editField" style = "display: none">
-      <h2></h2>
-      <input type="text" value=""/>
-    </div>
-    <div id="modal" style = "display: none">
-      <p>Please fill in all fields.</p>
-      <button type="submit" id="ok">Ok</button>
+      <div id="modal" style = "display: none">
+	<p>Please fill in all fields.</p>
+	<button type="submit" id="ok">Ok</button>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>
